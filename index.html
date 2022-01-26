@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Latihan UTS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+      /* Remove the navbar's default margin-bottom and rounded borders */ 
+      .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+      }
+      /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+      .row.content {height: 450px}
+      /* Set gray background color and 100% height */
+      .sidenav {
+        padding-top: 20px;
+        background-color: #f1f1f1;
+        height: 100%;
+      }
+      .form {
+        padding-top: 20px;
+        background-color: #f1f1f1;
+        height: 100%;
+      }
+      /* Set black background color, white text and some padding */
+      footer {
+        background-color: #555;
+        color: white;
+        padding: 15px;
+      }
+      /* On small screens, set height to 'auto' for sidenav and grid */
+      @media screen and (max-width: 767px) {
+        .sidenav {
+          height: auto;
+          padding: 15px;
+        }
+        .row.content {height:auto;} 
+      }
+      /* perlu tambah padding atas dan bawah agar tidak tertutup navbar yang fixed */
+      body {
+        padding-top: 50px;
+        padding-bottom: 70px;
+      }
+      img.logo {
+        width : 55px;
+        padding : 5px; 
+      }
+      td.col1 {
+        width : 25%;
+        padding : 5px;
+      }
+      td.col2 {
+        width : 5%;
+        padding : 5px;
+      }
+      td.col3 {
+        width : 40%;
+        padding : 5px;
+      }
+      td.coltgl {
+        width : 20%;
+        padding : 5px;
+      }
+      td.colthn {
+        width : 30%;
+        padding : 5px;
+      }
+      tr.row1 {
+        witdh : 100%;
+        text-align : left;
+        padding : 5%;
+      }
+      table.data{
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      td.data {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width :18%;
+      }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <img src="data\img\project1.png" class="logo">
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid text-center">    
+    <div class="row content">
+      <div class="col-sm-4 form">
+        <table width=100%>
+          <tr class="row1">
+            <td class="col1"> First Name </td>
+            <td class="col2"> : </td>
+            <td class="col3"> <input type="text" id="fname"> </td>
+          </tr>
+          <tr class="row1">
+            <td class="col1"> Last Name </td>
+            <td class="col2"> : </td>
+            <td class="col3"> <input type="text" id="lname"> </td>
+          </tr>
+          <tr class="row1">
+            <td class="col1"> Email </td>
+            <td class="col2"> : </td>
+            <td class="col3"> <input type="text" id="email"> </td>
+            <td class="col2"> @ </td>
+            <td class="col3">
+              <select id=postemail>
+                <option value="gmail"> gmail.com </option>
+                <option value="hotmail"> hotmail.com </option>
+              </select>
+            </td>
+          </tr>
+          <tr class="row1">
+            <td class="col1"> Gender </td>
+            <td class="col2"> : </td>
+            <td class="col3"> 
+              <form action="">
+                <input type="radio" id="genderm" name="gender" value="male"> Male
+                <input type="radio" id="genderf" name="gender" value="female"> Female
+                <input type="radio" id="gendera" name="gender" value="other"> Alien
+              </form>
+            </td>
+          </tr>
+          <tr class="row1">
+            <td class="col1"> Tempat, tgl Lahir </td>
+            <td class="col2"> : </td>
+            <td class="coltgl"> 
+              <select id="tgl">
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
+                <option value="5"> 5 </option>
+                <option value="6"> 6 </option>
+                <option value="7"> 7 </option>
+                <option value="8"> 8 </option>
+                <option value="9"> 9 </option>
+                <option value="10"> 10 </option>
+                <option value="11"> 11 </option>
+                <option value="12"> 12 </option>
+                <option value="13"> 13 </option>
+                <option value="14"> 14 </option>
+                <option value="15"> 15 </option>
+                <option value="16"> 16 </option>
+                <option value="17"> 17 </option>
+                <option value="18"> 18 </option>
+                <option value="19"> 19 </option>
+                <option value="20"> 20 </option>
+                <option value="21"> 21 </option>
+                <option value="22"> 22 </option>
+                <option value="23"> 23 </option>
+                <option value="24"> 24 </option>
+                <option value="25"> 25 </option>
+                <option value="26"> 26 </option>
+                <option value="27"> 27 </option>
+                <option value="28"> 28 </option>
+                <option value="29"> 29 </option>
+                <option value="30"> 30 </option>
+                <option value="31"> 31 </option>
+              </select>
+              <select id="bln">
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
+                <option value="5"> 5 </option>
+                <option value="6"> 6 </option>
+                <option value="7"> 7 </option>
+                <option value="8"> 8 </option>
+                <option value="9"> 9 </option>
+                <option value="10"> 10 </option>
+                <option value="11"> 11 </option>
+                <option value="12"> 12 </option>
+              </select>
+              <input type="text" id="thn" name="thn" maxlength="4" size="4"><br>
+            </td>
+          </tr>
+          <tr class="row1">
+            <td class="col1"> Keterangan </td>
+            <td class="col2"> : </td>
+            <td class="col3"> 
+              <textarea name="message" id="message" rows="3" cols="22"></textarea>
+            </td>
+          </tr>
+        </table>
+        <button onclick="push()">Try it</button>
+      </div>
+      <div class="col-sm-8 text-left"> 
+        <h3> Table Content </h3>
+        <p id="demo"></p>
+      </div>
+    </div>
+  </div>
+  <script>
+      var arr = 
+      [ 
+        ["First Name","Last Name","Email","Gender","Date of Birth","Message"],
+      ];
+      var body, tab, tr, td, tn, row, col;
+      body = document.getElementsByTagName('p')[0];
+      tab = document.createElement('table');
+      tab.id = 'tabel1';
+      tab.setAttribute("class","data");
+      for (row=0; row < arr.length; row++){
+        tr = document.createElement('tr');
+        tr.setAttribute("class","data");
+        for (col=0; col < arr[row].length; col++){
+          td = document.createElement('td');
+          td.setAttribute("class","data");
+          tn = document.createTextNode(arr[row][col]);
+          td.appendChild(tn);
+          tr.appendChild(td);
+        }
+        tab.appendChild(tr);
+      }
+      body.appendChild(tab);
+
+      function push() {
+        var elem = document.getElementById("tabel1");
+        elem.remove();
+        
+        var selected1,selected2;
+        var _fname = document.getElementById("fname").value;
+        var _lname = document.getElementById("lname").value;
+
+        selected1 = document.getElementById("postemail");
+        var _email = document.getElementById("email").value + "@" + selected1.options[selected1.selectedIndex].text;
+        var gender;
+        if(document.getElementById('genderm').checked)
+          gender = "m";
+        else if(document.getElementById('genderf').checked)
+          gender = "f";
+        else if(document.getElementById('gendera').checked)
+          gender = "a";
+        else
+          gender = "o";
+
+        selected1 = document.getElementById("tgl");
+        selected2 = document.getElementById("bln");
+        var _tgl = selected1.options[selected1.selectedIndex].text + "-" + selected2.options[selected2.selectedIndex].text + "-" + document.getElementById("thn").value;
+
+        var _message = document.getElementById("message").value;
+        
+        arr.push([_fname,_lname,_email,gender,_tgl,_message]);
+
+        var body, tab, tr, td, tn, row, col;
+        body = document.getElementsByTagName('p')[0];
+        tab = document.createElement('table');
+        tab.id = 'tabel1';
+        tab.setAttribute("class","data");
+        for (row=0; row < arr.length; row++){
+          tr = document.createElement('tr');
+          tr.setAttribute("class","data");
+          for (col=0; col < arr[row].length; col++){
+            td = document.createElement('td');
+            td.setAttribute("class","data");
+            tn = document.createTextNode(arr[row][col]);
+            td.appendChild(tn);
+            tr.appendChild(td);
+          }
+          tab.appendChild(tr);
+        }
+        body.appendChild(tab);
+      }
+    </script>
+  <footer class="container-fluid text-center navbar-fixed-bottom">
+    <p>Footer Text</p>
+  </footer>
+
+</body>
+</html>
